@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>
+         Быков Кирилл
+        </title>
+        <style>
+            body {
+                color: #f4f4f4;
+                font-family: 'Times New Roman', Times, serif, serif;
+            }
+        
+            h1 {
+                color: #4f4f4f;
+            }
+        
+            .bro {
+                color: yellow;
+            }
+        
+            .nebro {
+                color: burlywood;
+            }
+        
+            .bruh {
+                color: #f4f4f4;
+                font-size: 40;
+                /* font-stretch:expanded; */
+                text-shadow: 2px 2px red;
+                border: 2px solid blue;
+               
+        
+            }
+        
+        
+           
+        </style>
+    </head>
+    
+    <body background="123.jpg">
+        <div class="conteiner">
+            <div class="header">
+                <div class="author">
+                    <div class="info_box">
+                        <h2>Быков Кирилл ИГоревич</h2>
+                        <img src="321.png" width="95" height="84">
+                        <p>
+                            <span>Великая подмастерия забора данных у других студентов</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="skills">
+                <h3>LORE:</h3>
+                <hr>
+                <p>
+                    
+                    Когда-то при мудром правлении Сената и под зашитой Рыцарей Джедай существовала Республика, она процветала и росла. Но, как это часто случается, когда богатство и могущество перерастают разумные пределы и принимают угрожающие размеры, появляется опасность перерождения.
+                    Так случилось и с Республикой. Подобно большим деревьям, способным противостоять любым внешним воздействиям, Республика гнила изнутри, хотя это не было видно снаружи.
+                    Началась ожесточенная борьба за власть, ибо власть дает все — славу, богатство, силу. Тщеславный сенатор Палпатин путем козней и хитрости стал Президентом Республики. Он обещал умиротворить недовольный народ и возродить былую славу Республики.
+                    Очень скоро он провозгласил себя Императором. Изолировавшись от народа, он стал игрушкой в руках тех самых помощников и подхалимов, которых назначил на высокие посты. Призывы народа о справедливости уже не доходили до него.
+                    Уничтожив Рыцарей Джедай, сторонников законности, императорские чиновники установили режим террора во всей Галактике. Но всегда находятся храбрецы и правдолюбы, готовые положить жизнь за свободу и справедливость.
+                    Объявив себя противниками Нового порядка, они подняли восстание против авторитаризма.
+                    Они, конечно, уступали в численности системам, находившимся в подчинении Императора. В первые дни казалось, что яркое пламя восстания погаснет до того, как сможет пролить свет новой правды на Галактику угнетенных и покоренных народов.
+                </p>
+                <h3>обращение</h3>
+                <hr>
+    
+                <p class="bro">
+    
+                    Обратился в подвид под названием "Студент Обыкновенный на 90%"
+                </p>
+                <h3>Опыт </h3>
+                <hr>
+                <p class="nebro">
+                    Быков Кирилл: МНОГА
+                </p>
+                <h3>Интересы</h3>
+                <hr>
+                <p class="bruh">
+    
+                    Быков Кирилл: Да
+                </p>
+                <h3>Контакты</h3>
+                <hr>
+                <ul class="contacts">
+                    <li>
+                        <img src="da.jpg" width="30" height="30" /><a
+                            href="kruk">kruk</a>
+                    </li>
+                    <li>
+                        <img src="da.jpg" width="30" height="30" /><a href="tel:+2323232323">+2323232323</a>
+                    </li>
+                </ul>
+    
+            </div>
+    
+        </div>
+        <script>
+            function func1() {
+                if (confirm('Доброго времени суток, у этой страницы есть к вам вопрос, вы готовы ответить?')) {
+                    var name = prompt('Как вас зовут?', 'Введите сюда ваше имя');
+                    var admin = name;
+                    alert("Ваше имя - " + admin)
+                }
+                alert("Спасибо, что уделили время")
+            }
+        </script>
+    
+        <script>
+            function func2() {
+                if (confirm('Доброго времени суток, у этой страницы есть к вам вопрос, вы готовы ответить?')) {
+                    while (true) {
+    
+                        var age = prompt('ваш возраст?');
+                        if (confirm("Ваш возраст - " + age + " ?")) {
+                            alert("Спасибо, что уделили время")
+                            break
+                        }
+                        else {
+                            alert("Вы нажали кнопку отмена")
+                        }
+    
+                    }
+                }
+            }
+        </script>
+    
+    
+        <input type="text" id="newSurname" placeholder="Введите новую фамилию">
+        <button onclick="changeSurname()">Изменить фамилию</button>
+        <p>Текущая фамилия: <span id="surname">Быков</span></p>
+    
+        <script>
+            function changeSurname() {
+                var newSurname = document.getElementById("newSurname").value;
+                document.getElementById("surname").innerText = newSurname;
+            }
+        </script>
+    
+        <title>JavaScript в HTML</title>
+        <script>
+            function areEqual() {
+                // Получаем значения из полей ввода
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+    
+                // Проверяем, равны ли числа
+                var result = num1 === num2;
+    
+                // Отображаем результат в окошке
+                document.getElementById("result").innerText = result ? "Числа равны" : "Числа не равны";
+            }
+    
+        </script>
+    
+        <h1  class="hover-text" style="font-size: 30px;">JavaScript</h1>
+        <h1>Проверка на равенство чисел</h1>
+        <label for="num1">Число 1:</label>
+        <input type="text" id="num1"><br><br>
+        <label for="num2">Число 2:</label>
+        <input type="text" id="num2"><br><br>
+        <button onclick="areEqual()">Проверить</button>
+        <div id="result"></div>
+    
+        <div>
+            <p>Скрипты:</p>
+            <button onclick="func1()">Спросить имя</button>
+            <button onclick="func2()">Спросить возраст</button>
+        </div>
+    </body>
+    
+   
+</html>
